@@ -1,0 +1,78 @@
+.user-layout-root {
+  .v-toolbar__content {
+    border-bottom: 1px solid rgb(173, 173, 173);
+  }
+
+  .v-app-bar {
+    .v-toolbar__title {
+      margin-right: 20px;
+      .logo-wrapper {
+        color: black;
+        text-decoration: none;
+      }
+    }
+
+    .list-categories {
+      margin-left: 20px;
+      .list-item-categories {
+        .name-list {
+          color: black;
+          cursor: pointer;
+          font-size: 14px;
+        }
+
+        .name-list:hover{
+          color: #4169e1;
+        }
+      }
+    }
+    
+    .search-courses {
+      margin: 0 25px 0 25px;
+      .v-text-field {
+        width: 450px;
+      }
+
+      .v-input__slot {
+        padding: 0 15px;
+        border: black 1px solid;
+        box-shadow: none !important;
+      }
+
+      .v-input__prepend-inner {
+        padding-right: 15px;
+      }
+    }
+
+    .v-list {
+      max-height: 48px;
+      .v-list-item {
+        margin-right: 30px;
+        padding: 0px;
+        .v-list-item__title {
+          color: black;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .authentication-user {
+      .v-btn {
+        margin-right: 10px;
+        text-transform: none;
+      }
+
+      .theme--light {
+        background-color: #ffffff;
+        border: 1px #000000 solid;
+      }
+    }
+    
+    .translate-page {
+      border: 1px #000000 solid;
+      .theme--light {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
