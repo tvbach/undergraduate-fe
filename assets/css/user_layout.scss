@@ -53,18 +53,25 @@
     .v-list {
       max-height: 48px;
       .v-list-item {
-        margin-right: 30px;
-        padding: 0px;
+        padding: 0px 12px 0px 12px;
+        pa
         .v-list-item__title {
           color: black;
           font-size: 14px;
+        }
+      }
+
+      .icon-content {
+        .v-list-item__icon {
+          margin-right: 0px;
+          min-width: 32px;
         }
       }
     }
 
     .authentication-user {
       .v-btn {
-        margin-right: 10px;
+        margin-right: 7px;
         text-transform: none;
       }
 
