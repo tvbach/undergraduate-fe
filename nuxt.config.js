@@ -1,5 +1,4 @@
 import colors from 'vuetify/es5/util/colors'
-import webpack from 'webpack'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -22,7 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    
+    '@/assets/css/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -81,17 +80,6 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  css: [
-    "@/node_modules/bootstrap/dist/css/bootstrap.css",
-    "@/assets/css/main.scss"
-  ],
-  // plugins: ["~plugins/bootstrap.js"],
   build: {
-    vendor: ["jquery", "bootstrap"],
-    plugins: [
-      new webpack.ProvidePlugin({
-        $: "jquery"
-      })
-    ]
   }
 }
