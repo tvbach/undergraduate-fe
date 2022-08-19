@@ -4,6 +4,6 @@
 
 <script>
 export default {
-  layout: 'user_layout'
+  layout: 'users_layout'
 }
 </script>
