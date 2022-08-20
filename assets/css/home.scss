@@ -1,0 +1,27 @@
+@media all and (min-width: 1264px) {
+  .userpage-container {
+    max-width: 93% !important;
+  }
+}
+
+.userpage-container {
+  padding: 0px !important;
+}
+
+.banner-content-box {
+  position: absolute;
+  top: 6.4rem;
+  left: 7.7rem;
+  padding: 2.4rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  background-color: #ffffff;
+  max-width: 30rem;
+
+  .title-box {
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle-box {
+    font-size: 1.4rem;
+  }
+}
