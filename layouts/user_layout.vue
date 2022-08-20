@@ -6,13 +6,13 @@
           <v-toolbar-title>
             <nuxt-link class="logo-wrapper" to='/'> Logo </nuxt-link>
           </v-toolbar-title>
-          <div class="list-categories">
+          <v-btn class="list-categories custom-btn" plain depressed ripple>
             <div class="list-item-categories">
               <div class="name-list-items">
-                <span class="name-list"> Categories </span>
+                <span class="name-list text-font"> Categories </span>
               </div>
             </div>
-          </div>
+          </v-btn>
           <div class="search-courses">
             <v-text-field
               solo
@@ -28,35 +28,39 @@
               v-for="(item, i) in navbar_loggined"
               :key="i"
             >
-              <v-list-item-content class="icon-content">
-                <v-list-item-title v-text="item.content" v-if="item.content"></v-list-item-title>
-                <v-list-item-icon v-if="item.icon">
-                  <v-badge
-                    color="green"
-                    content="6"
-                    overlap
-                  >
-                    <v-icon> {{ item.icon }} </v-icon>
-                  </v-badge>
-                </v-list-item-icon>
-              </v-list-item-content>
+              <v-btn class="custom-btn" plain depressed>
+                <v-list-item-content class="icon-content">
+                  <v-list-item-title class="text-font" v-text="item.content" v-if="item.content"></v-list-item-title>
+                  <v-list-item-icon v-if="item.icon">
+                    <v-badge
+                      color="green"
+                      content="6"
+                      overlap
+                    >
+                      <v-icon class=""> {{ item.icon }} </v-icon>
+                    </v-badge>
+                  </v-list-item-icon>
+                </v-list-item-content>
+              </v-btn>
             </v-list-item>
             <v-list-item>
-              <v-list-item-content class="icon-content">
-                <v-list-item-icon>
-                  <v-icon> mdi-cart-outline </v-icon>
-                </v-list-item-icon>
-              </v-list-item-content>
+              <v-btn class="custom-btn" plain depressed>
+                <v-list-item-content class="icon-content">
+                  <v-list-item-icon>
+                    <v-icon> mdi-cart-outline </v-icon>
+                  </v-list-item-icon>
+                </v-list-item-content>
+              </v-btn>
             </v-list-item>
           </v-list>
-          <div class="authentication-user d-flex">
-            <div v-if="logged" class="user-unlogin">
+          <div class="authentication-user">
+            <div v-if="logged" class="user-unlogin d-flex">
               <v-avatar
                 color="primary"
                 size="36"
               />
             </div>
-            <div v-else class="user-logged-in">
+            <div v-else class="user-logged-in d-flex">
               <div class="user-login">
                 <v-btn to="/login" depressed light>
                   <span> Log in </span>
@@ -69,7 +73,7 @@
               </div>
               <div class="translate-page">
                 <v-btn depressed light small>
-                  <v-icon> mdi-earth </v-icon>
+                  <v-icon class="disable-border"> mdi-earth </v-icon>
                 </v-btn>
               </div>
             </div>
