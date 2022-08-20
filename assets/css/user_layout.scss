@@ -1,6 +1,11 @@
 @import './authentication.scss';
+@import './home.scss';
 
 .user-layout-root {
+  .v-application {
+    z-index: 1;
+  }
+
   .v-application--wrap {
     min-height: min-content;
   }

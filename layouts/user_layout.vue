@@ -82,7 +82,7 @@
       </v-app-bar>
     </v-app>
     <v-main>
-      <v-container>
+      <v-container class="userpage-container">
         <Nuxt ref="nuxtApp"/>
       </v-container>
     </v-main>
